@@ -2,6 +2,7 @@
   "paper": "F8dIPCR1ly",
   "tests_passed": true,
   "gate": true,
+  "publication_gate_passed": true,
   "bundle_bytes": 1011871,
   "bundle_sha256": "23594102e087d37477b17512d95d825e2ee74c4633196dc37a58caac644fdd6a"
 }

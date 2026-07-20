@@ -21,7 +21,7 @@ def main()->None:
  need({"overview","claim-1","claim-2","claim-3","claim-4","methods","negative-controls","conclusion"}<=pages,"missing pages")
  c=(ROOT/".trackio/logbook/pages/conclusion/page.md").read_text()
  need(c.count('"pinned": true')==1 and "FULL_GATE_READY: F8dIPCR1ly" in c,"pinned conclusion")
- out={"paper":PAPER,"tests_passed":True,"gate":True,"bundle_bytes":bundle.stat().st_size,"bundle_sha256":hashlib.sha256(bundle.read_bytes()).hexdigest()}
+ out={"paper":PAPER,"tests_passed":True,"gate":True,"publication_gate_passed":True,"bundle_bytes":bundle.stat().st_size,"bundle_sha256":hashlib.sha256(bundle.read_bytes()).hexdigest()}
  (ROOT/"outputs/PUBLICATION_GATE_PASSED.json").write_text(json.dumps(out,indent=2)+"\n")
  print(json.dumps(out,sort_keys=True))
 if __name__=="__main__":main()
