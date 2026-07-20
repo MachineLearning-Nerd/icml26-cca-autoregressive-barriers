@@ -2,15 +2,15 @@
 
 - Paper: `F8dIPCR1ly` — *Barriers to Counterfactual Credit Attribution for Autoregressive Models*
 - Owner: `codex-cca-barriers-four-claims`
-- State: `in_progress`
+- State: `queued_for_hf_publication`
 - Effective contract: 4 anchored claims / 8 possible points
 - Primary source: arXiv `2605.01425`
 - Source/compute audit: passed for the published finite constructions; no GPU, data set, or model inference is required.
 
 ## Current step
 
-Build the complete evidence bundle and Trackio logbook from the independently
-verified four-claim evidence, then run the public-release gate.
+Await the single shared HF publisher's public Space and artifact-bucket
+readback; do not launch another publisher from this paper session.
 
 ## Full-scope evidence plan
 
@@ -33,3 +33,4 @@ None known.
 - C1/C4 producer: all 42 predeclared `(epsilon, delta)` witnesses pass the exact-support per-token `(0,0)`-CCA check and violate the rollout event inequality.
 - C2 verified: the independent two-sided rollout check is infinite for pure epsilon because the counterfactual has an additional uncredited support point; the paper's finite Theorem-4.3 lower certificate `-log(p)` is strictly valid in every cell. `docs/independent_proof_audit.md` independently derives the universal trace-chain inequality.
 - C3 verified: the independently formulated exact augmentation LP covers all 3,048 `(ell,z,epsilon,gamma)` cells for `ell=1..7`, four epsilon values, and three gamma values; exhaustive marked-string decision trees require exactly `2^ell` worst-case oracle queries. The independent audit derives the LP equivalence and the Lemma-5.8/Lemma-5.9 reduction for arbitrary length.
+- Publication: public GitHub commit `16820e9` was pushed first; canonical backlog entry #51 was atomically added. Local gate passes with a 1,011,871-byte evidence bundle, SHA-256 `23594102e087d37477b17512d95d825e2ee74c4633196dc37a58caac644fdd6a`.
