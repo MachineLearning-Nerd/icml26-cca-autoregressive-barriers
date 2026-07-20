@@ -1,0 +1,24 @@
+{
+  "space_id": "DineshAI/F8dIPCR1ly",
+  "title": "Repro - Barriers to Counterfactual Credit Attribution for Autoregressive Models",
+  "openreview_id": "F8dIPCR1ly",
+  "arxiv_id": "2605.01425",
+  "paper": {
+    "openreview_id": "F8dIPCR1ly",
+    "arxiv_id": "2605.01425"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-F8dIPCR1ly"
+  ],
+  "private": false,
+  "autosync": true,
+  "local_path_artifacts": [{
+    "path": "outputs/evidence_bundle.jsonl",
+    "abs_path": "/home/dineshai/Drives/Code/AllCode/ReproduceICML/papers/icml26-repro-F8dIPCR1ly-cca-autoregressive-barriers/outputs/evidence_bundle.jsonl",
+    "size": 1011871,
+    "artifact_type": "dataset"
+  }],
+  "local_artifacts": [],
+  "last_page": "conclusion"
+}
