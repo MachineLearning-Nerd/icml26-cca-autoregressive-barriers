@@ -9,8 +9,8 @@
 
 ## Current step
 
-Implement a second independent probability model of the Theorem-4.2
-counterexample and bind all raw outputs to a fail-closed claim verifier.
+Build the complete evidence bundle and Trackio logbook from the independently
+verified four-claim evidence, then run the public-release gate.
 
 ## Full-scope evidence plan
 
@@ -31,5 +31,5 @@ None known.
 
 - Source PDF is pinned at SHA-256 `bb03dbafca39e5c0cf19d44bf6b1982d65736a6314370d6ec90d1e87c3890f34`.
 - C1/C4 producer: all 42 predeclared `(epsilon, delta)` witnesses pass the exact-support per-token `(0,0)`-CCA check and violate the rollout event inequality.
-- C2 preliminary producer: the independent two-sided rollout check is infinite for pure epsilon because the counterfactual has an additional uncredited support point; the paper's finite Theorem-4.3 lower certificate `-log(p)` is therefore strictly valid in every cell. A general-proof audit is still required.
-- C3 preliminary producer: the independently formulated exact augmentation LP now covers all 360 `(ell,z,epsilon,gamma)` cells for `ell=1..4`, four epsilon values, and three gamma values (maximum error `5.0e-16`); exhaustive marked-string decision trees require exactly `2^ell` worst-case oracle queries. The asymptotic reduction still needs its independent proof audit.
+- C2 verified: the independent two-sided rollout check is infinite for pure epsilon because the counterfactual has an additional uncredited support point; the paper's finite Theorem-4.3 lower certificate `-log(p)` is strictly valid in every cell. `docs/independent_proof_audit.md` independently derives the universal trace-chain inequality.
+- C3 verified: the independently formulated exact augmentation LP covers all 360 `(ell,z,epsilon,gamma)` cells for `ell=1..4`, four epsilon values, and three gamma values (maximum error `5.0e-16`); exhaustive marked-string decision trees require exactly `2^ell` worst-case oracle queries. The independent audit derives the LP equivalence and the Lemma-5.8/Lemma-5.9 reduction for arbitrary length.
