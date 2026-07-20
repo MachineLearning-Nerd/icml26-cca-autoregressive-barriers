@@ -1,0 +1,12 @@
+{
+  "all_claims_complete": true,
+  "possible_points": 8,
+  "verdicts": [
+    "verified",
+    "verified",
+    "verified",
+    "verified"
+  ],
+  "theorem4_witnesses": 42,
+  "theorem5_cells": 254
+}

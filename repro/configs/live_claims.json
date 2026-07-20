@@ -1,0 +1,10 @@
+{
+  "openreview_id": "F8dIPCR1ly",
+  "source": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge/resolve/main/claims_anchored.json",
+  "claims": [
+    "For every ε>0 and 0≤δ<1, there exists a (0,0)-CCA next-token predictor whose induced autoregressive generative model is not (ε,δ)-CCA, showing CCA does not compose autoregressively unlike differential privacy (Theorem 4.2).",
+    "When an ε-CCA next-token predictor induces an ε'-CCA generative model, ε' is lower-bounded by a quantity that can exceed |y|·ε, meaning stricter per-token ε guarantees can yield worse rollout (whole-sequence) CCA guarantees (Theorem 4.3).",
+    "Any algorithm solving the α-approximate CCA-Retrofit problem for α<1/2 with only black-box query access requires Ω̃(2^ℓ) oracle queries in the worst case for length-ℓ outputs, establishing exponential query complexity for post-hoc retrofitting (Theorem 5.5, Section 5).",
+    "Imposing CCA directly on the underlying next-token predictor does not guarantee that the resulting autoregressive generative model is CCA, as formalized by the composition failure results (Section 4)."
+  ]
+}
