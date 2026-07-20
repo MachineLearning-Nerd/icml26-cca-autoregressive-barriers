@@ -37,9 +37,13 @@ def main() -> None:
         require(int(row["worst_case_queries"]) == int(row["two_to_length"]), "Lemma-5.8 decision-tree mismatch")
         require(float(row["theorem55_reduction_factor"]) > 0.0, "Theorem-5.5 reduction failure")
     verdicts = {
-        "all_claims_complete": True,
+        # These executable constructions are necessary evidence, but not yet the
+        # independent proof audit for the universal portions of Theorems 4.3 and
+        # 5.5.  The publication gate must refuse to release this intermediate
+        # state rather than silently upgrading a finite grid to a theorem proof.
+        "all_claims_complete": False,
         "possible_points": 8,
-        "verdicts": ["verified", "verified", "verified", "verified"],
+        "verdicts": ["verified", "pending_proof_audit", "pending_proof_audit", "verified"],
         "theorem4_witnesses": len(c4),
         "theorem5_cells": len(c5),
     }

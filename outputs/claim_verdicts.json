@@ -1,10 +1,10 @@
 {
-  "all_claims_complete": true,
+  "all_claims_complete": false,
   "possible_points": 8,
   "verdicts": [
     "verified",
-    "verified",
-    "verified",
+    "pending_proof_audit",
+    "pending_proof_audit",
     "verified"
   ],
   "theorem4_witnesses": 42,
