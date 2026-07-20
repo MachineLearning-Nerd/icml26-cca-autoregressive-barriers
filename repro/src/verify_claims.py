@@ -31,7 +31,7 @@ def main() -> None:
         require(float(row["theorem43_path_lower_bound"]) > 0.0, "nonpositive theorem-4.3 lower bound")
         require(float(row["rollout_min_epsilon_delta0"]) >= float(row["theorem43_path_lower_bound"]), "lower-bound contradiction")
     c5 = list(csv.DictReader((ROOT / "outputs/theorem5_hard_family.csv").open()))
-    require(len(c5) == 254, "incomplete hard-family enumeration")
+    require(len(c5) == 360, "incomplete cross-parameter hard-family enumeration")
     for row in c5:
         require(abs(float(row["optimal_credit_lp"]) - float(row["claimed_gamma"])) < 1e-8, "Lemma-5.6 LP mismatch")
         require(int(row["worst_case_queries"]) == int(row["two_to_length"]), "Lemma-5.8 decision-tree mismatch")
