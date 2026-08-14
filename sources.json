@@ -1,0 +1,41 @@
+{
+  "paper": {
+    "title": "Barriers to Counterfactual Credit Attribution for Autoregressive Models",
+    "authors": [
+      "Aloni Cohen",
+      "Chenhao Zhang"
+    ],
+    "venue": "ICML 2026",
+    "openreview_id": "F8dIPCR1ly",
+    "openreview_url": "https://openreview.net/forum?id=F8dIPCR1ly",
+    "arxiv_id": "2605.01425",
+    "arxiv_version": "v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01425",
+    "official_claim_count": 3,
+    "anchored_claim_count": 4
+  },
+  "challenge_contract": {
+    "path": "repro/configs/live_claims.json",
+    "source_url": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge/resolve/main/claims_anchored.json",
+    "sha256": "20dd0d213a796b540a690aad581bc705dc7b24444c0264688efe3bf58c278fec"
+  },
+  "source_artifact": {
+    "path": "docs/primary.pdf",
+    "format": "PDF",
+    "version": "arXiv v1",
+    "sha256": "bb03dbafca39e5c0cf19d44bf6b1982d65736a6314370d6ec90d1e87c3890f34",
+    "license": "CC BY 4.0 (as listed by the arXiv record)"
+  },
+  "audit": {
+    "type": "clean-room",
+    "language": "Python",
+    "network_access": false,
+    "author_executable_files": [],
+    "scope": "exact finite-state CCA counterexample, pathwise lower-bound cells, exact augmentation LPs, and selected proof-step audits",
+    "not_reproduced": [
+      "formal proof checking",
+      "language-model training or inference",
+      "datasets and empirical benchmarks"
+    ]
+  }
+}

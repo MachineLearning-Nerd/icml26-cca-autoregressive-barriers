@@ -1,0 +1,145 @@
+{
+  "files": [
+    {
+      "bytes": 65,
+      "path": ".gitignore",
+      "sha256": "d1a070f6bb10c7d6216e2fa38fc726f7e237fa70550f9c82a5b47e8737f324f9"
+    },
+    {
+      "bytes": 6508,
+      "path": "README.md",
+      "sha256": "2257a666a2a5aa87cfe08e3fd1d3168aabb98430070757a95ce88418a4f5ee82"
+    },
+    {
+      "bytes": 1426,
+      "path": "STATUS.md",
+      "sha256": "0cb80f35513820433556a98bcc1fa25b9d06d6a4123e6bd20805470101d736e7"
+    },
+    {
+      "bytes": 564,
+      "path": "docs/BRANCH_AUDIT.md",
+      "sha256": "5822eda27e9f79a7439bb4e8d3cface032456de89c20085a9c6b447cd6917511"
+    },
+    {
+      "bytes": 3653,
+      "path": "docs/CLAIM_EVIDENCE.md",
+      "sha256": "53f6e9756776083071b247c78fb5f46cf54ed9e5940daa074c89b36353904323"
+    },
+    {
+      "bytes": 974,
+      "path": "docs/PUBLICATION_GATE.md",
+      "sha256": "8ec56b062daf21810fb40b132a921742314d946a34a85da7a255481516930c32"
+    },
+    {
+      "bytes": 878,
+      "path": "docs/SOURCE_AUDIT.md",
+      "sha256": "70d04ea5bebd2fdd27faec64a3819253f154c27906ad1ad7b11ca700bff3602f"
+    },
+    {
+      "bytes": 3083,
+      "path": "docs/independent_proof_audit.md",
+      "sha256": "af6077f79f9ef9535223eff4d2e097bcc72ab9a8648a203c4c35645c2e89b9c3"
+    },
+    {
+      "bytes": 514893,
+      "path": "docs/primary.pdf",
+      "sha256": "bb03dbafca39e5c0cf19d44bf6b1982d65736a6314370d6ec90d1e87c3890f34"
+    },
+    {
+      "bytes": 196,
+      "path": "outputs/claim_verdicts.json",
+      "sha256": "87ffc8594bc0f9c0e749fb22eae56db485204b8b72034180854b7ef663964594"
+    },
+    {
+      "bytes": 1027034,
+      "path": "outputs/evidence_bundle.jsonl",
+      "sha256": "18034f2d65e664a7e04128c616d1e026b0dc4874149ce5019274abc7b1825fa4"
+    },
+    {
+      "bytes": 4918,
+      "path": "outputs/proof_audit.csv",
+      "sha256": "5f659e2d921c4526bccac296fff876b06c4f77e9cc05f12bd9c96bb7727c40b7"
+    },
+    {
+      "bytes": 4237,
+      "path": "outputs/theorem4_grid.csv",
+      "sha256": "d1b448223f1571963b81f08ab2cf7bfbb3017e2ea92606f62e04d6e40d97ae7f"
+    },
+    {
+      "bytes": 215702,
+      "path": "outputs/theorem5_hard_family.csv",
+      "sha256": "21401bd9afc0530df652364185cadd1a76e93d22dfd54f3233d9ae3b83e197b8"
+    },
+    {
+      "bytes": 1147,
+      "path": "repro/configs/live_claims.json",
+      "sha256": "20dd0d213a796b540a690aad581bc705dc7b24444c0264688efe3bf58c278fec"
+    },
+    {
+      "bytes": 41,
+      "path": "repro/requirements.txt",
+      "sha256": "52c503651790ef3a35c059e02ce2c9d37cf136e495298e5b571df3bd653a1cd4"
+    },
+    {
+      "bytes": 1504,
+      "path": "repro/src/artifact_manifest.py",
+      "sha256": "c0042c1b850af67173c8fbd3357f7bf675e8bb5b12e4ba0f889b4cdd19789704"
+    },
+    {
+      "bytes": 1131,
+      "path": "repro/src/build_bundle.py",
+      "sha256": "dcb6e89e7f4119d0864baec5e5727069a8eb16043b7185ad4b15bb783f29f473"
+    },
+    {
+      "bytes": 4146,
+      "path": "repro/src/proof_audits.py",
+      "sha256": "c533bd197a5fc1d860074be2a817eef7f87cc9c4f631abff6bf8a7d480a7d954"
+    },
+    {
+      "bytes": 7687,
+      "path": "repro/src/publication_gate.py",
+      "sha256": "2ce08fe7c7a9ba01ff5da179bba80dc4ccea8ca060750ef69e0f75cf708c6926"
+    },
+    {
+      "bytes": 1740,
+      "path": "repro/src/run_theorem4.py",
+      "sha256": "aec867c0b85a0f1140c93e19f3332719e2cc5c113070c0d39352751e23a7c94d"
+    },
+    {
+      "bytes": 2396,
+      "path": "repro/src/run_theorem5.py",
+      "sha256": "9b8755a7cfcf80674644f7e5aa2ebf43446173d1202f33c562507bdd5a5eaa99"
+    },
+    {
+      "bytes": 5089,
+      "path": "repro/src/theorem4.py",
+      "sha256": "f874a8fb2d49d08c5721fc391ae0d81e8bde8843bd06a1d8977d791d7a18ddb8"
+    },
+    {
+      "bytes": 3482,
+      "path": "repro/src/theorem5.py",
+      "sha256": "bc435ae7b3a363759073853229874bb7b2434d5a8bf35ff121cd6aa855bf6164"
+    },
+    {
+      "bytes": 2556,
+      "path": "repro/src/verify_claims.py",
+      "sha256": "21c1c73ed728886f3d7da6ac547b80d85e01089011fcf2652fd7d71d4aee5b13"
+    },
+    {
+      "bytes": 785,
+      "path": "repro/tests/test_theorem4.py",
+      "sha256": "6e644d29ca99823fefc8907464360286e3fa4b4ed17fb40ae417ce72cbcf04d1"
+    },
+    {
+      "bytes": 393,
+      "path": "repro/tests/test_theorem5.py",
+      "sha256": "9bb53db2734f3ca0f69f84408644cf8badb79dc04ddb34e2e9e8843c808ce83b"
+    },
+    {
+      "bytes": 1421,
+      "path": "sources.json",
+      "sha256": "7e1a8ed7c3bf8ae0dbb8bcef5456067329738fdac3b45c5f1260d4e43d21a112"
+    }
+  ],
+  "schema": "icml2026-artifact-manifest-v1"
+}

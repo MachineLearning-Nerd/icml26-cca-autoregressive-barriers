@@ -11,9 +11,9 @@ from theorem5 import optimal_credit_lp, strings, theorem55_lower_bound_factor, w
 ROOT = Path(__file__).resolve().parents[2]
 EPSILONS = (0.0, 0.3, 1.0, 2.0)
 GAMMAS = (0.2, 0.4, 0.7)
-# This cross-parameter LP grid is intentionally bounded at ell=4; the separate
-# fixed-parameter exhaustive run through ell=7 remains the large-family audit.
-LENGTHS = tuple(range(1, 5))
+# Seven is the largest length in this checked-in finite audit.  The proof audit
+# separately checks the universal reduction at the same upper length.
+LENGTHS = tuple(range(1, 8))
 
 
 def main() -> None:
@@ -43,7 +43,7 @@ def main() -> None:
                     )
     out = ROOT / "outputs/theorem5_hard_family.csv"
     with out.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     assert len(rows) == len(EPSILONS) * len(GAMMAS) * sum(2**length for length in LENGTHS)

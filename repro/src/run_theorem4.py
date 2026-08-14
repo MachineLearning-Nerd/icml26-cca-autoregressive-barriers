@@ -17,7 +17,7 @@ def main() -> None:
     rows = [witness(epsilon, delta) for epsilon in EPSILONS for delta in DELTAS]
     out = ROOT / "outputs/theorem4_grid.csv"
     with out.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     assert len(rows) == len(EPSILONS) * len(DELTAS)

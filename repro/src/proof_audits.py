@@ -83,7 +83,7 @@ def main() -> None:
         rows.append({"kind": "lemma59_samples", "n": length, "epsilon": 0.0, "value": lemma59_samples(length, .4), "bound": 2 * length * lemma59_samples(length, .4)})
     out = ROOT / "outputs/proof_audit.csv"
     with out.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader(); writer.writerows(rows)
     print(f"wrote {len(rows)} independent appendix-audit cells")
 

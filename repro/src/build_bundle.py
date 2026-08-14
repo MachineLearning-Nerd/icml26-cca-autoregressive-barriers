@@ -5,9 +5,11 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
 PATHS=(
- "docs/primary.pdf","docs/independent_proof_audit.md","outputs/theorem4_grid.csv",
- "outputs/theorem5_hard_family.csv","outputs/proof_audit.csv","outputs/claim_verdicts.json",
- "repro/configs/live_claims.json","repro/src/theorem4.py","repro/src/theorem5.py","repro/src/verify_claims.py",
+ "docs/primary.pdf","docs/independent_proof_audit.md","docs/CLAIM_EVIDENCE.md",
+ "sources.json","outputs/theorem4_grid.csv","outputs/theorem5_hard_family.csv",
+ "outputs/proof_audit.csv","outputs/claim_verdicts.json","repro/configs/live_claims.json",
+ "repro/src/theorem4.py","repro/src/theorem5.py","repro/src/proof_audits.py",
+ "repro/src/run_theorem4.py","repro/src/run_theorem5.py","repro/src/verify_claims.py",
 )
 def sha(b:bytes)->str:return hashlib.sha256(b).hexdigest()
 def main()->None:

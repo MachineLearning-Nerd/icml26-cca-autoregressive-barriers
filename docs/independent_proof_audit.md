@@ -48,8 +48,9 @@ family, the exceptional `z||0` output has
 
 It follows for any feasible point that `R <= 1-gamma`. The interval
 construction in Appendix B attains this bound; independently formulated
-HiGHS LPs recover credit `gamma` in every one of the 360 recorded
-`(ell,z,epsilon,gamma)` cells.
+HiGHS LPs recover credit `gamma` in every one of the 72 recorded
+`(ell,z,epsilon,gamma)` proof-audit cells (`ell=2..7`). The broader producer
+grid records all 3,048 hard-family cells for `ell=1..7`.
 
 For Lemma 5.8, until querying the sole exceptional prompt `z`, every model in
 the `2^ell`-member family returns the identical full distribution. Under a
