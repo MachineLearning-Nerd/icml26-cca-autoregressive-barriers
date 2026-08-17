@@ -22,8 +22,8 @@
     "C3": 1,
     "C4": 1
   },
-  "last_checkpoint": "2026-08-17T00:00:00Z",
-  "last_known_git_commit": "25b8c2b5e043a1e57cb3abb3eeaa911cb6696e33",
+  "last_checkpoint": "2026-08-17T02:00:00Z",
+  "last_known_git_commit": "dbccf25",
   "publication_allowed": false,
   "compute_policy": "Use the committed finite construction and proof-audit artifacts for ordinary verification; do not promote finite checks into formal proof checking or rerun the full producer gate during final-state verification.",
   "selection_rationale": "CCA is a theory-paper audit with exact finite Theorem 4 and Theorem 5 constructions, an independent proof-step audit, no author executable, and a clean single-branch history.",
