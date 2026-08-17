@@ -103,6 +103,30 @@ constructions. Theorem-wide quantifiers and asymptotic conclusions still rely
 on the paper's proofs; `docs/independent_proof_audit.md` audits selected proof
 steps independently and explicitly records that boundary.
 
+## Standardized audit dossier
+
+The collection-level records make the paper boundary and final publication
+state explicit:
+
+- [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md) maps each claim to its producer, checker, result, and limitation.
+- [SOURCE_AUDIT.md](SOURCE_AUDIT.md) pins the paper PDF, challenge contract, and clean-room boundary.
+- [ENVIRONMENT.md](ENVIRONMENT.md) records the deterministic gate and lightweight verification commands.
+- [REPORT.md](REPORT.md) states the scoped verdict and non-claims.
+- [BRANCH_AUDIT.md](BRANCH_AUDIT.md) and [branch-audit.md](branch-audit.md) describe the complete main-only history.
+- [CITATION.cff](CITATION.cff) and [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md) provide citation and author acknowledgment.
+- [claims.json](claims.json) and [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) bind claim statuses and file hashes.
+
+From a fresh clone, run:
+
+~~~sh
+python3 verify_final.py
+~~~
+
+The verifier checks the live GitHub branch, canonical attribution, paper and
+contract pins, finite evidence counts, gate-copy equality, and explicit
+formal-proof/empirical non-claims. It does not silently promote finite checks
+into a machine-checked proof.
+
 ## Source and citation
 
 The pinned paper PDF is `docs/primary.pdf`. Its SHA-256 is:

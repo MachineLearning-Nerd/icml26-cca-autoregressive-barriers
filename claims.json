@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-cca-autoregressive-barriers",
+  "paper": {
+    "title": "Barriers to Counterfactual Credit Attribution for Autoregressive Models",
+    "authors": [
+      "Aloni Cohen",
+      "Chenhao Zhang"
+    ],
+    "arxiv": "2605.01425",
+    "arxiv_version": "v1",
+    "openreview": "F8dIPCR1ly"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "status": "verified_scoped",
+      "paper_statement": "A next-token (0,0)-CCA predictor can fail sequence-level (epsilon,delta)-CCA.",
+      "scope": "Exact finite-state Theorem 4.2 construction over 42 declared epsilon/delta cells; not a formal universal proof.",
+      "evidence": [
+        "outputs/theorem4_grid.csv",
+        "outputs/claim_verdicts.json",
+        "CLAIM_EVIDENCE.md"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "verified_scoped",
+      "paper_statement": "Autoregressive rollout CCA can require more than the per-token guarantee suggests.",
+      "scope": "Finite-support path certificate plus independently generated branching trace audit.",
+      "evidence": [
+        "outputs/theorem4_grid.csv",
+        "outputs/proof_audit.csv",
+        "docs/independent_proof_audit.md"
+      ]
+    },
+    {
+      "id": "C3",
+      "status": "verified_scoped",
+      "paper_statement": "Approximate CCA retrofitting requires exponentially many black-box queries.",
+      "scope": "Exact Section 5 hard-family LP and decision-tree cells through marked-string length 7; asymptotic conclusion remains paper-level.",
+      "evidence": [
+        "outputs/theorem5_hard_family.csv",
+        "outputs/proof_audit.csv",
+        "outputs/claim_verdicts.json"
+      ]
+    },
+    {
+      "id": "C4",
+      "status": "verified_scoped",
+      "paper_statement": "Direct next-token CCA does not guarantee autoregressive CCA.",
+      "scope": "Consequence of the exact C1 rollout counterexample; no separate model or training claim.",
+      "evidence": [
+        "outputs/claim_verdicts.json",
+        "repro/src/verify_claims.py",
+        "repro/src/theorem4.py"
+      ]
+    }
+  ],
+  "official_code": {
+    "repository": null,
+    "status": "not_available",
+    "note": "The source audit found no author executable; repro/ is clean-room code."
+  },
+  "publication_allowed": false,
+  "publication_policy": "Publish the finite construction audit with explicit formal-proof, asymptotic, model, and empirical limits; do not assert a score or author endorsement."
+}

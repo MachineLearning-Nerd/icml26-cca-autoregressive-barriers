@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If this scoped audit is useful, please cite the CCA paper and this repository."
+type: software
+title: "Barriers to Counterfactual Credit Attribution for Autoregressive Models — scoped audit"
+abstract: "A clean-room, hash-bound audit of finite counterexamples and lower-bound constructions for counterfactual credit attribution in autoregressive models."
+authors:
+  - family-names: Cohen
+    given-names: Aloni
+  - family-names: Zhang
+    given-names: Chenhao
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-cca-autoregressive-barriers"
+url: "https://arxiv.org/abs/2605.01425"
+date-released: 2026-08-17
+keywords:
+  - ICML 2026
+  - counterfactual credit attribution
+  - autoregressive models
+  - clean-room reproduction
+  - audit

@@ -14,6 +14,13 @@
     "official_claim_count": 3,
     "anchored_claim_count": 4
   },
+  "repository": {
+    "owner": "MachineLearning-Nerd",
+    "final_name": "icml26-cca-autoregressive-barriers",
+    "former_name": "icml26-repro-F8dIPCR1ly-cca-autoregressive-barriers",
+    "default_branch": "main",
+    "url": "https://github.com/MachineLearning-Nerd/icml26-cca-autoregressive-barriers"
+  },
   "challenge_contract": {
     "path": "repro/configs/live_claims.json",
     "source_url": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge/resolve/main/claims_anchored.json",
