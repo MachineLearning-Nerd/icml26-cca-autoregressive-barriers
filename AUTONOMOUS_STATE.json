@@ -23,8 +23,8 @@
     "C3": 1,
     "C4": 1
   },
-  "last_checkpoint": "2026-08-17T02:00:00Z",
-  "last_known_git_commit": "dbccf251dd847188a7e4d2a5863254403d2f3bd2",
+  "last_checkpoint": "2026-08-19T13:25:34+05:30",
+  "last_known_git_commit": "0a6fa4bfe9f4cd68fb75b8f7edb5697bb6e6e0ed",
   "publication_allowed": false,
   "overall_verdict": "VERIFIED_SCOPED_WITH_EXACT_FINITE_CONSTRUCTION_AUDIT",
   "compute_policy": "Use the committed finite construction and proof-audit artifacts for ordinary verification; do not promote finite checks into formal proof checking or rerun the full producer gate during final-state verification.",
