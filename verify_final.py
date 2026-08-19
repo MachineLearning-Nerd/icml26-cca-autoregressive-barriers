@@ -44,6 +44,7 @@ REQUIRED_PATHS = [
     "BRANCH_AUDIT.md",
     "branch-audit.md",
     "claims.json",
+    "reproduction_verdicts.json",
     "EVIDENCE_MANIFEST.json",
     "verify_final.py",
     "docs/BRANCH_AUDIT.md",
@@ -269,6 +270,19 @@ def verify_artifacts() -> None:
     require(
         state.get("claim_statuses") == dict(zip(["C1", "C2", "C3", "C4"], EXPECTED_STATUSES)),
         "state claim statuses changed",
+    )
+
+    reproduction = current_json("reproduction_verdicts.json")
+    require(
+        reproduction.get("repository") == f"MachineLearning-Nerd/{REPOSITORY}"
+        and reproduction.get("overall_verdict") == "VERIFIED_SCOPED_WITH_EXACT_FINITE_CONSTRUCTION_AUDIT"
+        and reproduction.get("publication_allowed") is False,
+        "reproduction verdict header changed",
+    )
+    reproduction_statuses = {row.get("id"): row.get("status") for row in reproduction.get("claims", [])}
+    require(
+        reproduction_statuses == dict(zip(["C1", "C2", "C3", "C4"], EXPECTED_STATUSES)),
+        "reproduction verdict statuses changed",
     )
 
     root_gate = current_json("publication_gate.json")

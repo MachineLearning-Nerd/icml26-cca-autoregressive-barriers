@@ -9,7 +9,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "31ec8ab0ddeed436f98c47cdd670712cedfd19d45e54418c97489d974b163153"
+      "sha256": "0a1e35d914d0acbb5acd59cc6d6993694f259b2f6e1bcc2d0189a071ca891831"
     },
     {
       "path": "STATUS.md",
@@ -60,8 +60,12 @@
       "sha256": "caaf860d2e8cca3a62f7bf41918c96734d1332645768afd53206aef87a59cf00"
     },
     {
+      "path": "reproduction_verdicts.json",
+      "sha256": "5fd970324427cd992074e64bac733cb4ea484d0f11590bf4672c0dc12cd78d97"
+    },
+    {
       "path": "verify_final.py",
-      "sha256": "bbd4116c180f7094f4fe6712bdc95a3f1d4d8088053e1e9f3e1db73fffbf1627"
+      "sha256": "490af3ccc9fe9600b259cfbb0e9218348653013a46584b4e52aa8fcbaf2db874"
     },
     {
       "path": "docs/BRANCH_AUDIT.md",

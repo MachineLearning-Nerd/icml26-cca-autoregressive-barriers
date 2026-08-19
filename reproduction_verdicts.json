@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-cca-autoregressive-barriers",
+  "paper": {
+    "title": "Barriers to Counterfactual Credit Attribution for Autoregressive Models",
+    "arxiv": "2605.01425v1",
+    "openreview": "F8dIPCR1ly"
+  },
+  "overall_verdict": "VERIFIED_SCOPED_WITH_EXACT_FINITE_CONSTRUCTION_AUDIT",
+  "publication_allowed": false,
+  "claims": [
+    {"id": "C1", "status": "verified_scoped", "scope": "Exact finite-state Theorem 4.2 counterexample across 42 epsilon/delta witness cells; not a formal universal proof."},
+    {"id": "C2", "status": "verified_scoped", "scope": "Finite-support rollout certificate plus 24 independently checked branching trace cells."},
+    {"id": "C3", "status": "verified_scoped", "scope": "Exact Section 5 augmentation LP and marked-string query audit through length 7; asymptotic conclusion remains paper-level."},
+    {"id": "C4", "status": "verified_scoped", "scope": "Section 4 composition consequence bound to the independent rollout oracle; no separate model or training claim."}
+  ],
+  "limitations": [
+    "No author executable, model, or empirical pipeline is included.",
+    "Finite construction checks do not replace formal proof checking or asymptotic proofs.",
+    "publication_allowed remains false for a complete paper-level reproduction or score."
+  ]
+}
